@@ -19,7 +19,7 @@ export default function Layout({ children, showGoBack, styled }) {
             deployed with <strong>Vercel</strong>.
           </p>
           {showGoBack && (
-            <Link href="/">
+            <Link href="/" as="/">
               <a>Go back</a>
             </Link>
           )}

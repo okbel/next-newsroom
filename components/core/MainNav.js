@@ -7,17 +7,17 @@ const MainNav = () => (
       Concepts:
       <div className={s.row}>
         <div className={s.col}>
-          <Link href="/concepts/example-ssg">
+          <Link href="/concepts/example-ssg" as="/concepts/example-ssg">
             <a className={s.btn}>Static Generation (SSG)</a>
           </Link>
         </div>
         <div className={s.col}>
-          <Link href="/concepts/example-ssr">
+          <Link href="/concepts/example-ssr" as="/concepts/example-ssr">
             <a className={s.btn}>Server Rendered (SSR)</a>
           </Link>
         </div>
         <div className={s.col}>
-          <Link href="/concepts/isg">
+          <Link href="/concepts/isg" as="/concepts/isg">
             <a className={s.btn}>Incremental Static Generation</a>
           </Link>
         </div>
@@ -25,7 +25,7 @@ const MainNav = () => (
       Real Scenario Examples:
       <div className={s.row}>
         <div className={s.col}>
-          <Link href="/examples/articles">
+          <Link href="/examples/articles" as="/examples/articles">
             <a className={s.btn}>Common Newsroom</a>
           </Link>
           <ul>
