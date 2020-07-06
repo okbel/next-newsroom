@@ -22,13 +22,25 @@ const MainNav = () => (
           </Link>
         </div>
       </div>
-      Real Scenario Examples:
+      Examples:
       <div className={s.row}>
         <div className={s.col}>
-          <Link href="/examples/articles" as="/examples/articles">
+          <Link href="/examples/common" as="/examples/common">
             <a className={s.btn}>Common Newsroom</a>
           </Link>
           <ul>
+            <li>Example using templates by section</li>
+            <li>Powered by CosmicJS</li>
+            <li>Content loaded statically</li>
+          </ul>
+        </div>
+        <div className={s.col}>
+          <Link href="/examples/real" as="/examples/real">
+            <a className={s.btn}>Real Case Newsroom</a>
+          </Link>
+          <ul>
+            <li>Lazy loading</li>
+            <li>Ads</li>
             <li>Example using templates by section</li>
             <li>Powered by CosmicJS</li>
             <li>Content loaded statically</li>
