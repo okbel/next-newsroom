@@ -1,187 +1,76 @@
-import Image from "../../../components/core/Image";
-
-const Main = () => (
-  <main className="container mx-auto relative py-6 px-10">
-    <div className="">
-      <Image
-        alt="image"
-        publicId="top-banner.jpg"
-        className="w-full"
-        width="1200"
-        height="150"
+import Image from "@/components/core/Image";
+import Link from "next/link";
+const Main = ({ articles }) => (
+  <main className="relative">
+    <section className="relative bg-indigo-100 overflow-hidden">
+      <img
+        className="absolute w-full object-cover z-0"
+        src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
       />
-    </div>
-    <div className="grid md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-10 mt-6">
-      <div className="relative col-span-2  overflow-hidden">
-        <Image
-          alt="image"
-          publicId="product-bags_n9filt.jpg"
-          className="w-full"
-          width="786"
-          height="507"
-        />
-        <div className="absolute bg-white p-6 text-center bottom-0 w-full">
-          <span className="text-2xl">Iconic Handbags</span>
-          <a className="font-bold block">SHOP LV, HÈRMES, and MORE</a>
-        </div>
+      <div className="container h-64 mx-auto p-10 relative z-10">
+        <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+          The Hidden Magnetic Universe Begins to Come Into View
+        </h2>
+        <p className="mt-3 max-w-3xl text-lg leading-7 text-gray-500">
+          Astronomers are discovering that magnetic fields permeate much of the
+          cosmos. If these fields date back to the Big Bang, they could solve a
+          major cosmological mystery.
+        </p>
       </div>
-      <div className="flex flex-col text-center">
-        <div className="relative flex-1 mb-10 text-center">
-          <Image
-            alt="image"
-            publicId="product-shoes_wiujqw.jpg"
-            width="373"
-            height="274"
-          />
-          <div className="absolute bg-gray-200 p-3 text-center bottom-0 w-full">
-            <span className="text-2xl">Shoes with Sole</span>
-            <a className="font-bold block underline uppercase text-sm">
-              Shop now
-            </a>
-          </div>
+    </section>
+    <div class="container mx-auto p-10 mt-12 grid gap-16 border-t-2 border-gray-100 pt-12 lg:grid-cols-3 lg:col-gap-5 lg:row-gap-12">
+      <div>
+        <div>
+          <a href="#" class="inline-block">
+            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-indigo-100 text-indigo-800">
+              Article
+            </span>
+          </a>
         </div>
-        <div className="relative flex-1">
-          <Image
-            alt="image"
-            publicId="product-women_mcaj3r.jpg"
-            width="373"
-            height="274"
-          />
-          <div className="absolute bg-transparent text-center bottom-0 mb-10 w-full">
-            <a className="font-bold block underline uppercase text-sm text-white">
-              Shop now
-            </a>
+        <a href="#" class="block">
+          <h3 class="mt-4 text-xl leading-7 font-semibold text-gray-900">
+            Boost your conversion rate
+          </h3>
+          <p class="mt-3 text-base leading-6 text-gray-500">
+            Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
+            massa dictumst amet. Sapien tortor lacus arcu.
+          </p>
+        </a>
+        <div class="mt-6 flex items-center">
+          <p class="text-sm leading-5 font-medium text-gray-900">
+            <a href="#">Paul York</a>
+          </p>
+          <div class="flex text-sm leading-5 text-gray-500">
+            <time datetime="2020-03-16">Mar 16, 2020</time>
+            <span class="mx-1">&middot;</span>
+            <span>6 min read</span>
           </div>
         </div>
       </div>
     </div>
-    <div className="px-3 py-6 border-t border-gray-300 mt-12">
-      <h2 className="text-center text-2xl">Top Designers</h2>
-      <div className="mt-5 grid gap-5 xl:grid-cols-6 sm:grid-cols-3 grid-cols-1 p-3">
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-center  inline-block h-40 w-40 rounded-full">
-            <Image
-              alt="image"
-              publicId="designer-gucci.jpg"
-              width="142"
-              height="142"
-            />
-          </div>
-          <span className="block mt-2 underline font-bold uppercase text-sm">
-            GUCCI
-          </span>
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-center  inline-block h-40 w-40 rounded-full">
-            <Image
-              alt="image"
-              publicId="designer-burberry_xx9byy.jpg"
-              width="142"
-              height="142"
-            />
-          </div>
-          <span className="block mt-2 underline font-bold uppercase text-sm">
-            Burberry
-          </span>
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-center  inline-block h-40 w-40 rounded-full">
-            <Image
-              alt="image"
-              publicId="designer-prada_jaxbna.jpg"
-              width="142"
-              height="142"
-            />
-          </div>
-          <span className="block mt-2 underline font-bold uppercase text-sm">
-            Prada
-          </span>
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-center  inline-block h-40 w-40 rounded-full">
-            <Image
-              alt="image"
-              publicId="designer-louboutin_gqnhf2.jpg"
-              width="142"
-              height="142"
-            />
-          </div>
-          <span className="block mt-2 underline font-bold uppercase text-sm">
-            Louboutin
-          </span>
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-center  inline-block h-40 w-40 rounded-full">
-            <Image
-              alt="image"
-              publicId="designer-louis-vuitton_mmzvod.jpg"
-              width="142"
-              height="142"
-            />
-          </div>
-          <span className="block mt-2 underline font-bold uppercase text-sm">
-            Louis Vuitton
-          </span>
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-center  inline-block h-40 w-40 rounded-full">
-            <Image
-              alt="image"
-              publicId="designer-gucci.jpg"
-              width="142"
-              height="142"
-            />
-          </div>
-          <span className="block mt-2 underline font-bold uppercase text-sm">
-            HERMÈS
-          </span>
-        </div>
-      </div>
-    </div>
-    <div className="px-3 py-6 border-t border-gray-300 mt-12">
-      <h2 className="text-center text-2xl">Top Categories</h2>
-      <div className="mt-5 grid lg:grid-cols-3 gap-8 sm:grid-cols-1 p-3">
-        <div className=" ">
-          <Image
-            alt="image"
-            publicId="category-women_kvxh2t.jpg"
-            width="363"
-            height="450"
-          />
-        </div>
-        <div className=" ">
-          <Image
-            alt="image"
-            publicId="category-jewelry_txef2k.jpg"
-            width="363"
-            height="450"
-          />
-        </div>
-        <div className=" ">
-          <Image
-            alt="image"
-            publicId="category-men_d74ghz.jpg"
-            width="363"
-            height="450"
-          />
-        </div>
-      </div>
-    </div>
-    <div className="px-3 py-6 border-t border-gray-300 mt-12">
-      <Image
-        alt="image"
-        publicId="category-sale_p78qvm.jpg"
-        width="1200"
-        height="90"
-      />
-    </div>
-    <div className="px-3 py-6 border-t border-gray-300 mt-12 text-gray-600">
-      *Promotional code will expire seven days from issue date. Code is valid on
-      any item. Code may be split between multiple orders. Code does not apply
-      to gift cards or shipping. Returned items originally purchased with the
-      use of a code will result in the activation of the code, which will be
-      valid for the following three days.
-    </div>
+    <nav>
+      <ul>
+        {Object.keys(articles).map((section) => (
+          <li>
+            <label className="px-2 py-1 text-sm text-indigo-100 uppercase rounded-md bg-indigo-800">
+              {section}
+            </label>
+            <ul>
+              {articles[section].map((a) => (
+                <li>
+                  <Link
+                    href={`/examples/articles/${section}/${a.slug}`}
+                    as={`/examples/articles/${section}/${a.slug}`}
+                  >
+                    {a.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+    </nav>
   </main>
 );
 
