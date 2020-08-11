@@ -3,26 +3,28 @@ import s from "./MainNav.module.css";
 
 const MainNav = () => (
   <div className={s.root}>
-    <div className="flex flex-col">
+    <section id="concepts">
       Concepts:
       <div className={s.row}>
         <div className={s.col}>
-          <Link href="/concepts/example-ssg" as="/concepts/example-ssg">
+          <Link href="/concepts/ssg">
             <a className={s.btn}>Static Generation (SSG)</a>
           </Link>
         </div>
         <div className={s.col}>
-          <Link href="/concepts/example-ssr" as="/concepts/example-ssr">
+          <Link href="/concepts/ssr">
             <a className={s.btn}>Server Rendered (SSR)</a>
           </Link>
         </div>
         <div className={s.col}>
-          <Link href="/concepts/isg" as="/concepts/isg">
-            <a className={s.btn}>Incremental Static Generation</a>
+          <Link href="/concepts/isr">
+            <a className={s.btn}>Incremental Static Regeneration</a>
           </Link>
         </div>
       </div>
-      Examples:
+    </section>
+    Examples:
+    <section id="examples">
       <div className={s.row}>
         <div className={s.col}>
           <Link href="/examples/common" as="/examples/common">
@@ -47,7 +49,7 @@ const MainNav = () => (
           </ul>
         </div>
       </div>
-    </div>
+    </section>
     <footer className="mt-12">
       Built by <strong>Vercel ▲</strong> with{" "}
       <svg
