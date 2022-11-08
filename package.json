@@ -6,7 +6,7 @@
   "dependencies": {
     "@charlietango/use-native-lazy-loading": "^1.7.1",
     "cosmicjs": "^3.2.48",
-    "next": "^9.4.4",
+    "next": "^13.0.2",
     "postcss-nested": "^4.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
